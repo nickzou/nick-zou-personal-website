@@ -5,10 +5,13 @@
   "scripts": {
     "check": "biome check .",
     "format": "biome format --write .",
-    "fix": "biome check --write ."
+    "fix": "biome check --write .",
+    "vendor": "./scripts/vendor.sh"
   },
   "devDependencies": {
-    "@biomejs/biome": "2.6.7"
+    "@biomejs/biome": "2.6.7",
+    "@fontsource-variable/noto-sans": "5.3.0",
+    "alpinejs": "3.17.5"
   },
   "packageManager": "pnpm@12.18.0"
 }

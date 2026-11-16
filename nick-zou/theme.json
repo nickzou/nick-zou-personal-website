@@ -11,7 +11,17 @@
       "palette": [
         { "slug": "base", "name": "Base", "color": "#ffffff" },
         { "slug": "contrast", "name": "Contrast", "color": "#111111" },
-        { "slug": "accent", "name": "Accent", "color": "#2563eb" }
+        { "slug": "accent", "name": "Accent", "color": "#2563eb" },
+        {
+          "slug": "accent-secondary",
+          "name": "Accent Secondary",
+          "color": "#db2777"
+        },
+        {
+          "slug": "accent-tertiary",
+          "name": "Accent Tertiary",
+          "color": "#06b6d4"
+        }
       ]
     },
     "typography": {

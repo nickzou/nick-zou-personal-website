@@ -1,0 +1,4 @@
+alpine.min.js: Alpine.js 3.17.5 (cdn.min.js build), https://alpinejs.dev
+Copyright (c) Caleb Porzio and contributors. Licensed under the MIT License.
+
+Copied from node_modules by "pnpm run vendor". To update: pnpm update alpinejs && pnpm run vendor
