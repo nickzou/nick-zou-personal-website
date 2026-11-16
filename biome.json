@@ -6,7 +6,12 @@
     "useIgnoreFile": true
   },
   "files": {
-    "includes": ["**", "!composer.lock", "!pnpm-lock.yaml"]
+    "includes": [
+      "**",
+      "!composer.lock",
+      "!pnpm-lock.yaml",
+      "!nick-zou/assets/js/alpine.min.js"
+    ]
   },
   "formatter": {
     "enabled": true,

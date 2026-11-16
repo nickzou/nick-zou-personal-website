@@ -1,0 +1,38 @@
+/*
+ * Light and dark colour modes.
+ *
+ * With no data-theme attribute the page follows the system setting
+ * (color-scheme: light dark). The header toggle sets data-theme to force
+ * one mode. Light values mirror the palette in theme.json.
+ */
+
+:root {
+  color-scheme: light dark;
+  --wp--preset--color--base: light-dark(#ffffff, #0b0d14);
+  --wp--preset--color--contrast: light-dark(#111111, #f3f4f6);
+  --wp--preset--color--accent: light-dark(#2563eb, #60a5fa);
+}
+
+:root[data-theme="light"] {
+  color-scheme: light;
+}
+
+:root[data-theme="dark"] {
+  color-scheme: dark;
+}
+
+.theme-toggle {
+  font: inherit;
+  font-size: 0.875rem;
+  color: inherit;
+  background: transparent;
+  border: 1px solid currentColor;
+  border-radius: 999px;
+  padding: 0.25rem 0.75rem;
+  cursor: pointer;
+}
+
+.theme-toggle:hover,
+.theme-toggle:focus-visible {
+  background: color-mix(in srgb, currentColor 12%, transparent);
+}
