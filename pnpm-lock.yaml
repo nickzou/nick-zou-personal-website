@@ -169,6 +169,12 @@ importers:
       '@biomejs/biome':
         specifier: 2.6.7
         version: 2.6.7
+      '@fontsource-variable/noto-sans':
+        specifier: 5.3.0
+        version: 5.3.0
+      alpinejs:
+        specifier: 3.17.5
+        version: 3.17.5
 
 packages:
 
@@ -241,6 +247,18 @@ packages:
     cpu: [x64]
     os: [win32]
 
+  '@fontsource-variable/noto-sans@5.3.0':
+    resolution: {integrity: sha512-e3ZuxzY9AL2psXPZlhwhnYrHUHv6PMoyK9MQ7croF0CUgURLqu9EMjW7q2FgVLwij1tjLsIHQrnwQ8aUcg4BiA==}
+
+  '@vue/reactivity@3.5.45':
+    resolution: {integrity: sha512-WqkyubNWpI4OYBOipSrjIssMdJO8K1i9Zts/Wm8Er10/0msOEwCyWWWvZnAI7WW3kQsTong6DJp8Cbb+vd4cPA==}
+
+  '@vue/shared@3.5.45':
+    resolution: {integrity: sha512-ue9fgHmVNPlP7iW3+cxoBX/Cnlw53dHlVSw0JKGY6z1lObg8pHoj928M2nzG4/yVsMZ3NaRZ2s2z61uC16NDwQ==}
+
+  alpinejs@3.17.5:
+    resolution: {integrity: sha512-XewMqRC6zjy8iaUPn86dxjvooAsNai3hUtQbdn0A5H2w7Jt10xHGZ1SczN5+Dvp3UKkuSEt9moy/UaUWOwKdnQ==}
+
 snapshots:
 
   '@biomejs/biome@2.6.7':
@@ -285,3 +303,15 @@ snapshots:
 
   '@biomejs/cli-win32-x64@2.6.7':
     optional: true
+
+  '@fontsource-variable/noto-sans@5.3.0': {}
+
+  '@vue/reactivity@3.5.45':
+    dependencies:
+      '@vue/shared': 3.5.45
+
+  '@vue/shared@3.5.45': {}
+
+  alpinejs@3.17.5:
+    dependencies:
+      '@vue/reactivity': 3.5.45
