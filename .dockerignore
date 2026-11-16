@@ -11,3 +11,5 @@ pnpm-lock.yaml
 compose.yaml
 Dockerfile
 plugins/.gitkeep
+.github
+compose.prod.yaml
