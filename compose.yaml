@@ -12,6 +12,7 @@ services:
       WORDPRESS_DB_NAME: ${DB_NAME:-wordpress}
       WORDPRESS_DB_USER: ${DB_USER:-wordpress}
       WORDPRESS_DB_PASSWORD: ${DB_PASSWORD:?Set DB_PASSWORD in .env}
+      WP_ENVIRONMENT_TYPE: local
     volumes:
       - wp_content_uploads:/var/www/html/wp-content/uploads
 
