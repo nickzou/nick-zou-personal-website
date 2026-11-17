@@ -31,6 +31,7 @@ services:
       traefik.http.middlewares.nickzou-to-www.redirectregex.replacement: "https://${SITE_HOST}/$${1}"
       traefik.http.middlewares.nickzou-to-www.redirectregex.permanent: "true"
     environment:
+      WP_ENVIRONMENT_TYPE: production
       WORDPRESS_AUTH_KEY: ${WP_AUTH_KEY:?}
       WORDPRESS_SECURE_AUTH_KEY: ${WP_SECURE_AUTH_KEY:?}
       WORDPRESS_LOGGED_IN_KEY: ${WP_LOGGED_IN_KEY:?}

@@ -6,40 +6,9 @@
   <div class="wp-block-group">
     <!-- wp:navigation /-->
 
-    <!-- wp:html -->
-    <!-- Cycles system, light, dark. "system" means no stored value. Keep ">" out of the attributes: WordPress's text filter mangles quotes after it. -->
-    <button
-      type="button"
-      class="theme-toggle"
-      aria-label="Change color theme"
-      x-data="{
-        mode: 'system',
-        modes: ['system', 'light', 'dark'],
-        init() {
-          try {
-            const stored = localStorage.getItem('theme')
-            if (this.modes.includes(stored)) this.mode = stored
-          } catch (e) {}
-          this.$watch('mode', function (mode) {
-            const root = document.documentElement
-            if (mode === 'system') root.removeAttribute('data-theme')
-            else root.dataset.theme = mode
-            try {
-              if (mode === 'system') localStorage.removeItem('theme')
-              else localStorage.setItem('theme', mode)
-            } catch (e) {}
-          })
-        },
-      }"
-      x-on:click="mode = modes[(modes.indexOf(mode) + 1) % modes.length]"
-    >
-      <span
-        class="theme-toggle__label"
-        x-text="mode[0].toUpperCase() + mode.slice(1)"
-        >System</span
-      >
-    </button>
-    <!-- /wp:html -->
+    <!-- wp:shortcode -->
+    [theme_toggle]
+    <!-- /wp:shortcode -->
   </div>
   <!-- /wp:group -->
 </div>
